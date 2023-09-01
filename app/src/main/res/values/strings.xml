@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">evaluation_4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verification_header">OTP Verification</string>
+    <string name="validation_text">Enter the One Time Password sent to your
+registered mobile number ******48.</string>
+    <string name="verify_otp">VERIFY OTP</string>
+    <string name="received_otp">Did not receive OTP?</string>
+    <string name="resend">RESEND OTP</string>
+    <string name="smart_fun_route">CONTINUE TO SMARTFUN</string>
+    <string name="otp_verified">OTP Verified Successfully!</string>
+    <string name="header">New Card</string>
+    <string name="offer1">Card with Coke</string>
+    <string name="offer2">100 Credits Prize/Ticket Game Card</string>
+    <string name="offer3">New Birthday Card</string>
+    <string name="offer4">Birthday game card with Discount</string>
+    <string name="offer5">Birthday game card with 10% discount</string>
+    <string name="location_mangalore">Semnox Mangalore</string>
+    <string name="location_bangalore">Semnox Bangalore</string>
+    <string name="location_delhi">Semnox Delhi</string>
+    <string name="routeSelected">Continue to pay - $ 10</string>
+    <string name="item_selector">Location</string>
+</resources>

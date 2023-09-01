@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/otpFragment">
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.calculator.evaluation_4.OtpFragment"
+        tools:layout="@layout/fragment_otp">
+        <action
+            android:id="@+id/action_otpFragment_to_otpSuccessfulFragment"
+            app:destination="@id/otpSuccessfulFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpSuccessfulFragment"
+        android:name="com.calculator.evaluation_4.OtpSuccessfulFragment"
+        tools:layout="@layout/fragment_otp_successful">
+        <action
+            android:id="@+id/action_otpSuccessfulFragment_to_reFragment"
+            app:destination="@id/reFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reFragment"
+        android:name="com.calculator.evaluation_4.ReFragment"
+        android:label="New Card"
+        tools:layout="@layout/fragment_re">
+        <action
+            android:id="@+id/action_reFragment_to_selectedFragment"
+            app:destination="@id/selectedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedFragment"
+        android:name="com.calculator.evaluation_4.SelectedFragment"
+        android:label="New Card" />
+</navigation>

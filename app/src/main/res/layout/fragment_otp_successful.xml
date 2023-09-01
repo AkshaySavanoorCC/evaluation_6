@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".OtpSuccessfulFragment">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_marginTop="312dp"
+    android:src="@drawable/checkcircle"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:layout_width="265dp"
+    android:layout_height="24dp"
+    android:fontFamily="sans-serif-condensed"
+    android:lineHeight="24dp"
+    android:text="@string/otp_verified"
+    android:textAlignment="center"
+    android:textColor="#EE8664"
+    android:textFontWeight="400"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@+id/buttonSuccess"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+<Button
+    android:id="@+id/buttonSuccess"
+    android:layout_width="366dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="444dp"
+    android:background="@drawable/radius"
+    android:fontFamily="sans-serif-condensed"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:text="@string/smart_fun_route"
+    android:textFontWeight="700"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
