@@ -1,6 +1,6 @@
-package com.calculator.evaluation2_recyclerview.dataView;
+package com.calculator.evaluation_4.dataView;
 
-import com.calculator.evaluation2_recyclerview.dataModel.DataModel
+import com.calculator.evaluation_4.dataModel.DataModel
 import com.calculator.evaluation_4.R;
 
 

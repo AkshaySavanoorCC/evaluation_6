@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="CustomDropdownStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
-        <item name="hintTextColor">#666666
-        </item>
-        <!-- Other customizations as needed -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CustomActionBarStyle" parent="Theme.MaterialComponents.Light">
     </style>
+
+
+
 
 </resources>

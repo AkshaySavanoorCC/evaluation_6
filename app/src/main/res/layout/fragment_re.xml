@@ -7,26 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".ReFragment"
     android:focusableInTouchMode="true"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge"
     >
 
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lineHeight="14dp"
-        android:text="Location"
-        android:textFontWeight="400"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/dropdown_menu"
-        app:layout_constraintEnd_toEndOf="@+id/dropdown_menu"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="@+id/dropdown_menu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/dropdown_menu"
+
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginLeft="24dp"
@@ -35,15 +25,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:hint="@string/item_selector"
-        android:textColorHint="#666666"
         android:background="@drawable/border"
-        style="@style/CustomDropdownStyle">
-
+        app:hintTextColor="#666666"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+       >
         <AutoCompleteTextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
-            android:id="@+id/autoCompleteText" />
+            android:id="@+id/autoCompleteText"
+
+            />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
