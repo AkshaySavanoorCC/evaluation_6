@@ -49,18 +49,19 @@ class ReFragment : Fragment() {
             // Find the clicked CardView in the RecyclerView
             val clickedCardView = recyclerView.findViewHolderForAdapterPosition(position)?.itemView
             val cardView = clickedCardView?.findViewById<MaterialCardView>(R.id.offerId)
+            val tckSel = cardView?.findViewById<ImageView>(R.id.checkImg)
 
-            if (cardView != null) {
 
-                if (offerSelectedBtn.visibility == View.VISIBLE) {
-                    cardView.strokeColor = Color.parseColor("#EE8664")
-                    cardView.strokeWidth = resources.getDimensionPixelSize(R.dimen.stroke_width)
+
+                if (tckSel?.visibility== View.GONE) {
+                    cardView?.strokeColor = Color.parseColor("#EE8664")
+                    cardView?.strokeWidth = resources.getDimensionPixelSize(R.dimen.stroke_width)
 
                 } else {
-                    cardView.strokeColor = Color.TRANSPARENT
-                    cardView.strokeWidth = 0
+                    cardView?.strokeColor = Color.TRANSPARENT
+                    cardView?.strokeWidth = 0
                 }
-            }
+
 
             val chkImg = clickedCardView?.findViewById<ImageView>(R.id.checkImg)
 
