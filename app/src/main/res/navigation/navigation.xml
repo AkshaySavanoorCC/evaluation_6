@@ -6,7 +6,7 @@
     app:startDestination="@id/otpFragment">
     <fragment
         android:id="@+id/otpFragment"
-        android:name="com.calculator.evaluation_4.OtpFragment"
+        android:name="com.calculator.evaluation_4.fragments.OtpFragment"
         tools:layout="@layout/fragment_otp">
         <action
             android:id="@+id/action_otpFragment_to_otpSuccessfulFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/otpSuccessfulFragment"
-        android:name="com.calculator.evaluation_4.OtpSuccessfulFragment"
+        android:name="com.calculator.evaluation_4.fragments.OtpSuccessfulFragment"
         tools:layout="@layout/fragment_otp_successful">
         <action
             android:id="@+id/action_otpSuccessfulFragment_to_reFragment"
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/reFragment"
-        android:name="com.calculator.evaluation_4.ReFragment"
+        android:name="com.calculator.evaluation_4.fragments.OffersFragment"
         android:label="New Card"
         tools:layout="@layout/fragment_re">
         <action
@@ -31,6 +31,6 @@
     </fragment>
     <fragment
         android:id="@+id/selectedFragment"
-        android:name="com.calculator.evaluation_4.SelectedFragment"
+        android:name="com.calculator.evaluation_4.fragments.OffersSelectedFragment"
         android:label="New Card" />
 </navigation>

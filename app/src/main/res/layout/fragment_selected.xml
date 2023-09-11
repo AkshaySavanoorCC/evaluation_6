@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SelectedFragment"
+        tools:context=".fragments.OffersSelectedFragment"
         android:focusableInTouchMode="true"
         >
         <com.google.android.material.textfield.TextInputLayout

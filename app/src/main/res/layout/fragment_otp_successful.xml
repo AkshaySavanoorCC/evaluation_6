@@ -8,7 +8,7 @@
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/white"
-tools:context=".OtpSuccessfulFragment">
+tools:context=".fragments.OtpSuccessfulFragment">
 
 <ImageView
     android:id="@+id/imageView"
@@ -21,33 +21,35 @@ tools:context=".OtpSuccessfulFragment">
     app:layout_constraintTop_toTopOf="parent" />
 
 <TextView
-    android:layout_width="265dp"
-    android:layout_height="24dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:fontFamily="sans-serif-condensed"
     android:lineHeight="24dp"
     android:text="@string/otp_verified"
     android:textAlignment="center"
     android:textColor="#EE8664"
-    android:textFontWeight="400"
-    android:textSize="20sp"
+    android:textFontWeight="700"
+    android:textSize="25sp"
     app:layout_constraintBottom_toTopOf="@+id/buttonSuccess"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-<Button
-    android:id="@+id/buttonSuccess"
-    android:layout_width="366dp"
-    android:layout_height="40dp"
-    android:layout_marginTop="444dp"
-    android:background="@drawable/radius"
-    android:fontFamily="sans-serif-condensed"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp"
-    android:text="@string/smart_fun_route"
-    android:textFontWeight="700"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/buttonSuccess"
+        android:layout_width="366dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="488dp"
+        android:background="@drawable/radius"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/smart_fun_route"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

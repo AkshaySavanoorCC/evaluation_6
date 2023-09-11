@@ -21,4 +21,5 @@ registered mobile number ******48.</string>
     <string name="location_delhi">Semnox Delhi</string>
     <string name="routeSelected">Continue to pay - $ 10</string>
     <string name="item_selector">Location</string>
+    <string name="navigate_to_payment">Checkout</string>
 </resources>
