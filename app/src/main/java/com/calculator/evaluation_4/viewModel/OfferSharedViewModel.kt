@@ -51,8 +51,7 @@ class OfferSharedViewModel(private val repository: OfferRepository) : ViewModel(
 
 
     fun continueBtnVisibility(offers: List<OfferEntity>) {
-        val selectedOfferListSize = offers.filter { it.isSelected }.size
-        _offerSelectedButtonVisibility.value = selectedOfferListSize > 0
+        _offerSelectedButtonVisibility.value = offers.any { it.isSelected }
     }
 
     fun toggleOnCardClick(position: Int) {

@@ -79,10 +79,13 @@ class OffersFragment : Fragment() {
 
 
     private fun addItemToDatabase() {
-        val offer = OfferEntity(offerName = binding.offerInputText.text.toString(), isSelected = false)
-        offerSharedViewModel.addOffer(offer)
-        offerSharedViewModel.hideKeyboard(binding.addButton)
-        binding.offerInputText.text.clear()
+        val offerName = binding.offerInputText.text.toString()
+        if (offerName.isNotEmpty()) {
+            val offer = OfferEntity(offerName = offerName, isSelected = false)
+            offerSharedViewModel.addOffer(offer)
+            offerSharedViewModel.hideKeyboard(binding.addButton)
+            binding.offerInputText.text.clear()
+        }
     }
 
     private fun navigateToSelectedFragment() {

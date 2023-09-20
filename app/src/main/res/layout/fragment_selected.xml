@@ -12,11 +12,9 @@
 
 
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
             android:padding="12dp"
             app:flow_verticalGap="4dp"
             tools:listitem="@layout/card_view"
